@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppStoreReviewTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="App Store Average Review Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfZ-GH-JGd">
+                                <rect key="frame" x="37" y="40" width="341" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-58-6yi">
+                                <rect key="frame" x="62" y="203" width="290" height="290"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJw-Vf-0j9" customClass="ReviewTimesRing" customModule="AppStoreReviewTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="290"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nac-rE-lGe">
+                                                <rect key="frame" x="72" y="72" width="145" height="145"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="250"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="140"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="208"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="DrF-L1-FyY">
+                                                <rect key="frame" x="72" y="217" width="145" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="27"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="43"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="macOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuS-bc-ltb">
+                                                <rect key="frame" x="101" y="32" width="88" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="BuS-bc-ltb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TJw-Vf-0j9" secondAttribute="top" constant="16" id="5kO-7c-7gF"/>
+                                            <constraint firstItem="Nac-rE-lGe" firstAttribute="top" secondItem="BuS-bc-ltb" secondAttribute="bottom" priority="750" constant="8" id="5rz-5K-OSC"/>
+                                            <constraint firstItem="Nac-rE-lGe" firstAttribute="centerX" secondItem="TJw-Vf-0j9" secondAttribute="centerX" id="IhP-XF-4hC"/>
+                                            <constraint firstItem="DrF-L1-FyY" firstAttribute="centerX" secondItem="TJw-Vf-0j9" secondAttribute="centerX" id="Q03-Mc-zLN"/>
+                                            <constraint firstItem="BuS-bc-ltb" firstAttribute="centerX" secondItem="TJw-Vf-0j9" secondAttribute="centerX" id="Syl-au-7K9"/>
+                                            <constraint firstItem="DrF-L1-FyY" firstAttribute="top" secondItem="Nac-rE-lGe" secondAttribute="bottom" id="ZJN-0e-2e5"/>
+                                            <constraint firstItem="Nac-rE-lGe" firstAttribute="width" secondItem="TJw-Vf-0j9" secondAttribute="width" multiplier="0.5" id="dMi-Ip-Ffb"/>
+                                            <constraint firstItem="DrF-L1-FyY" firstAttribute="height" secondItem="Nac-rE-lGe" secondAttribute="height" multiplier="0.3" id="iQg-lQ-Oxl"/>
+                                            <constraint firstItem="Nac-rE-lGe" firstAttribute="height" secondItem="TJw-Vf-0j9" secondAttribute="height" multiplier="0.5" id="tCP-XA-vfO"/>
+                                            <constraint firstItem="DrF-L1-FyY" firstAttribute="width" secondItem="Nac-rE-lGe" secondAttribute="width" id="vgE-E1-em7"/>
+                                            <constraint firstItem="Nac-rE-lGe" firstAttribute="centerY" secondItem="TJw-Vf-0j9" secondAttribute="centerY" id="xIu-od-PWo"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-jt-8t9" customClass="ReviewTimesRing" customModule="AppStoreReviewTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="290"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlF-7G-HQc">
+                                                <rect key="frame" x="124" y="32" width="43" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="mPc-SC-DTJ">
+                                                <rect key="frame" x="73" y="218" width="145" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="27"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="43"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SLF-v7-L5C">
+                                                <rect key="frame" x="73" y="73" width="145" height="145"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="250"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="140"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="208"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="SLF-v7-L5C" firstAttribute="centerX" secondItem="7gj-jt-8t9" secondAttribute="centerX" id="3Nl-jO-c04"/>
+                                            <constraint firstItem="HlF-7G-HQc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7gj-jt-8t9" secondAttribute="top" constant="16" id="4jL-0c-3kz"/>
+                                            <constraint firstItem="SLF-v7-L5C" firstAttribute="width" secondItem="7gj-jt-8t9" secondAttribute="width" multiplier="0.5" id="Bke-0D-teT"/>
+                                            <constraint firstItem="SLF-v7-L5C" firstAttribute="height" secondItem="7gj-jt-8t9" secondAttribute="height" multiplier="0.5" id="GLX-ta-XDo"/>
+                                            <constraint firstItem="mPc-SC-DTJ" firstAttribute="top" secondItem="SLF-v7-L5C" secondAttribute="bottom" id="GOT-HZ-e5k"/>
+                                            <constraint firstItem="mPc-SC-DTJ" firstAttribute="centerX" secondItem="7gj-jt-8t9" secondAttribute="centerX" id="J5w-oh-BV3"/>
+                                            <constraint firstItem="mPc-SC-DTJ" firstAttribute="height" secondItem="SLF-v7-L5C" secondAttribute="height" multiplier="0.3" id="KFT-Fc-eix"/>
+                                            <constraint firstItem="SLF-v7-L5C" firstAttribute="top" secondItem="HlF-7G-HQc" secondAttribute="bottom" priority="750" constant="8" id="PFl-UM-ku3"/>
+                                            <constraint firstItem="SLF-v7-L5C" firstAttribute="centerY" secondItem="7gj-jt-8t9" secondAttribute="centerY" id="qwX-Gj-PqB"/>
+                                            <constraint firstItem="mPc-SC-DTJ" firstAttribute="width" secondItem="SLF-v7-L5C" secondAttribute="width" id="uSv-aa-ua0"/>
+                                            <constraint firstItem="HlF-7G-HQc" firstAttribute="centerX" secondItem="7gj-jt-8t9" secondAttribute="centerX" id="xs9-5a-ox5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TJw-Vf-0j9" firstAttribute="centerY" secondItem="gZ2-58-6yi" secondAttribute="centerY" id="0lt-E8-kCd"/>
+                                    <constraint firstItem="7gj-jt-8t9" firstAttribute="centerX" secondItem="gZ2-58-6yi" secondAttribute="centerX" id="GQB-hf-j6s"/>
+                                    <constraint firstItem="7gj-jt-8t9" firstAttribute="width" secondItem="gZ2-58-6yi" secondAttribute="width" id="J8p-BL-aGy"/>
+                                    <constraint firstItem="TJw-Vf-0j9" firstAttribute="centerX" secondItem="gZ2-58-6yi" secondAttribute="centerX" id="cRG-ba-Iz7"/>
+                                    <constraint firstAttribute="width" secondItem="gZ2-58-6yi" secondAttribute="height" multiplier="1:1" id="dBe-xN-uEE"/>
+                                    <constraint firstItem="TJw-Vf-0j9" firstAttribute="width" secondItem="gZ2-58-6yi" secondAttribute="width" id="ifQ-ve-6xP"/>
+                                    <constraint firstItem="TJw-Vf-0j9" firstAttribute="height" secondItem="gZ2-58-6yi" secondAttribute="height" id="o1d-DK-FM4"/>
+                                    <constraint firstItem="7gj-jt-8t9" firstAttribute="height" secondItem="gZ2-58-6yi" secondAttribute="height" id="qAJ-38-CRd"/>
+                                    <constraint firstItem="7gj-jt-8t9" firstAttribute="centerY" secondItem="gZ2-58-6yi" secondAttribute="centerY" id="sQE-q3-dxp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2v-uD-YWc">
+                                <rect key="frame" x="156" y="686" width="102" height="30"/>
+                                <state key="normal" title="Contribute iOS"/>
+                                <connections>
+                                    <action selector="contributeReviewTime" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CA-aY-ZWe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gZ2-58-6yi" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="15y-PI-W6R"/>
+                            <constraint firstItem="jfZ-GH-JGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7k6-6P-7UZ"/>
+                            <constraint firstItem="gZ2-58-6yi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="HHz-WO-2yV"/>
+                            <constraint firstItem="jfZ-GH-JGd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="IL2-lm-CFn"/>
+                            <constraint firstItem="jfZ-GH-JGd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="JZY-qe-755"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F2v-uD-YWc" secondAttribute="bottom" constant="20" id="Xtd-Ts-TeW"/>
+                            <constraint firstItem="F2v-uD-YWc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dzx-Sz-PHI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jfZ-GH-JGd" secondAttribute="trailing" constant="32" id="jKc-VZ-VRV"/>
+                            <constraint firstItem="gZ2-58-6yi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="omE-Z9-jrt"/>
+                            <constraint firstItem="gZ2-58-6yi" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="u1Q-n5-OK0"/>
+                        </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="jfZ-GH-JGd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="contributeButton" destination="F2v-uD-YWc" id="a5P-h0-f3Q"/>
+                        <outlet property="iOSDaysLabel" destination="mPc-SC-DTJ" id="hmE-Vu-GDo"/>
+                        <outlet property="iOSLabel" destination="SLF-v7-L5C" id="1iE-xO-Fde"/>
+                        <outlet property="iOSReviewTimeContainer" destination="7gj-jt-8t9" id="BuN-4G-een"/>
+                        <outlet property="macOSDaysLabel" destination="DrF-L1-FyY" id="3fi-Wt-PNr"/>
+                        <outlet property="macOSLabel" destination="Nac-rE-lGe" id="8WI-QV-6v4"/>
+                        <outlet property="macOSReviewTimeContainer" destination="TJw-Vf-0j9" id="8Ry-2c-MwQ"/>
+                        <outlet property="reviewTimeContainer" destination="gZ2-58-6yi" id="Jz2-Qo-nTf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="479"/>
+        </scene>
+    </scenes>
+</document>
